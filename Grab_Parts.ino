@@ -437,7 +437,7 @@ Serial.print("move to x:"); Serial.print(gPTPCmd.x); Serial.print(" y:"); Serial
 
 SetPTPCmd(&gPTPCmd, true, &gQueuedCmdIndex);
 
-if (endeffectorGripper = true) {
+if (endeffectorGripper == true) {
   if (vacuumOn == false && vacuumOn != currentVac) {
       Serial.println("Open GRIPPER");
       //delay(1000);
